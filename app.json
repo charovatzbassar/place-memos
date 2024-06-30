@@ -1,7 +1,7 @@
 {
   "expo": {
-    "name": "places",
-    "slug": "places",
+    "name": "place-memos",
+    "slug": "place-memos",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
