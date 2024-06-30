@@ -7,6 +7,8 @@ import IconButton from "./components/UI/IconButton";
 import { Colors } from "./utils/Colors";
 import Map from "./screens/Map";
 import DbContextProvider from "./store/db-context";
+import PlaceDetails from "./screens/PlaceDetails";
+import EditPlace from "./screens/EditPlace";
 
 const Stack = createNativeStackNavigator();
 
@@ -47,6 +49,20 @@ export default function App() {
               component={AddPlace}
               options={{
                 title: "Add A New Place",
+              }}
+            />
+            <Stack.Screen
+              name="EditPlace"
+              component={EditPlace}
+              options={{
+                title: "Edit Place",
+              }}
+            />
+            <Stack.Screen
+              name="PlaceDetails"
+              component={PlaceDetails}
+              options={{
+                title: "Place Details",
               }}
             />
             <Stack.Screen name="Map" component={Map} />

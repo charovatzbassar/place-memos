@@ -39,6 +39,7 @@ const styles = StyleSheet.create({
   title: {
     fontSize: 16,
     marginBottom: 4,
+    color: "#ccc"
   },
   address: {
     color: "#666",

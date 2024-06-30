@@ -12,12 +12,12 @@ import { Colors } from "../../utils/Colors";
 import ImagePicker from "./ImagePicker";
 import LocationPicker from "./LocationPicker";
 
-const PlaceForm = ({ createPlace }) => {
+const PlaceForm = ({ handler }) => {
   return (
     <ScrollView style={styles.form}>
       <Formik
         initialValues={{ title: "", image: null, location: null }}
-        onSubmit={createPlace}
+        onSubmit={handler}
       >
         {({ handleChange, handleBlur, handleSubmit, values }) => (
           <View>
